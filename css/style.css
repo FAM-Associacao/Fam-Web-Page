@@ -1,5 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Carousel Swiper*/
+.container-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  margin: 0 40px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 40px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #333333;
+  border-radius: 20px;
+  text-align: start;
+  margin: 10px 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px 20px 5px 30px;
+  -webkit-border-radius: 20px 20px 5px 30px;
+  -moz-border-radius: 20px 20px 5x 30px;
+}
+
+.description {
+  padding: 20px;
+}
+
+.description h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.description p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #afafaf;
+}
+
+/*Seção de tornar-se membro*/
+.become-member-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #68B504;
+  margin: 40px 0;
+
+}
+
+.become-member-section h3 {
+  z-index: 1;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.member-button {
+  z-index: 1;
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 259ms;
+}
+
+.member-button:hover,
+.member-button:focus {
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.member-button:hover {
+  transform: translateY(-2px);
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/05/20/microsoftteams-image-(52)-uve52muydws2.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 360px) {
+
+  /*Carousel Swiper*/
+  .subtitle {
+    justify-content: center;
+    margin: auto auto;
+  }
+
+  .card {
+    width: 315px;
+  }
+}
+
+/* Responsividade Tablet */
+@media (max-width: 1024px) {
+
+  /*Carousel Swiper*/
+  .subtitle {
+    justify-content: center;
+    margin: auto auto;
+  }
+
+  .card {
+    width: 315px;
+  }
+
 }
