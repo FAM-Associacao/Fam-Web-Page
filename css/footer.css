@@ -17,8 +17,8 @@ footer {
 .container-inputs-contact {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
+
   input {
     width: 48%;
     padding: 5px;
@@ -32,7 +32,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  
+
   textarea {
     width: 100%;
     padding: 5px;
@@ -54,7 +54,7 @@ footer {
   border: none;
   cursor: pointer;
   transition: 0.3s;
-  padding: 12px;
+  padding: 8px;
 
   &:hover {
     background-color: #502e89;
@@ -106,6 +106,7 @@ footer {
     width: 50%;
 
   }
+  
   .opening-hours > p {
     margin: 0px;
   }
@@ -122,8 +123,63 @@ footer {
     font-size: 14px;
   }
 
+  .info-address {
+    display: flex;
+    gap: 10px;
+  }
+
   .social-medias {
     display: flex;
     gap: 20px;
   }
+}
+
+@media (width <= 576px) {
+  .container-inputs-contact {
+    flex-direction: column;
+    gap: 20px;    
+    input {
+      width: 100%;
+    }
+  }
+  .container-home-links {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    .links-and-questions {
+      width: 100%;
+    }
+  }
+  .container-home-info {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .info-address {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+}
+
+/* Responsividade Tablet */
+@media (width <= 900px) {
+  .container-home-links {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    .links-and-questions {
+      width: 100%;
+    }
+  }
+  .container-home-info {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .info-address {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
 }
