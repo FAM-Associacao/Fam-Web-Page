@@ -4,11 +4,11 @@ footer {
 }
 
 .container-home-contact {
-    background-color: #333333;
+    background-color: #F2F2F2;
     padding: 20px;
 
   h3 {
-    color: #fff;
+    color: #333333;
     font-size: 20px;
     margin-bottom: 20px;
   }
@@ -21,10 +21,10 @@ footer {
 
   input {
     width: 48%;
-    padding: 5px;
-    background-color: #333333;
+    padding: 8px;
+    background-color: #F2F2F2;
     border-radius: 5px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #333333;
   }
 }
 
@@ -33,12 +33,12 @@ footer {
   justify-content: space-between;
   margin-bottom: 20px;
 
-  textarea {
+  input {
     width: 100%;
-    padding: 5px;
-    background-color: #333333;
+    padding: 8px;
+    background-color: #F2F2F2;
     border-radius: 5px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #333333;
   }
 }
 
@@ -134,6 +134,7 @@ footer {
   }
 }
 
+/* Responsividade Mobile */
 @media (width <= 576px) {
   .container-inputs-contact {
     flex-direction: column;
@@ -149,6 +150,14 @@ footer {
     .links-and-questions {
       width: 100%;
     }
+    button {
+      width: 70%;
+    }
+  }
+  .links-and-questions {
+    padding: 15px;
+    gap: 10px;
+    margin-left: 30px;
   }
   .container-home-info {
     flex-direction: column-reverse;
@@ -158,6 +167,10 @@ footer {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    p {
+      text-align: center;
+      padding: 5px;
+    }
   }
 
 }
