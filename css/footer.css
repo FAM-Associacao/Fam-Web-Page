@@ -64,7 +64,8 @@ footer {
 .container-home-links {
   display: flex;
   justify-content: space-evenly;
-  margin: 50px 0px;
+  margin: 30px 0px;
+  padding-top: 30px;
 
   a {
     color: #fff;
