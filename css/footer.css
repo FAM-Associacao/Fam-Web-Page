@@ -6,7 +6,6 @@ footer {
 .container-home-contact {
     background-color: #F2F2F2;
     padding: 20px;
-
   h3 {
     color: #333333;
     font-size: 20px;
@@ -64,8 +63,8 @@ footer {
 
 .container-home-links {
   display: flex;
-  justify-content: space-around;
-  margin: 30px 0px;
+  justify-content: space-evenly;
+  margin: 50px 0px;
 
   a {
     color: #fff;
@@ -115,7 +114,7 @@ footer {
 .container-home-info {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px 0px;
 
   span {
@@ -125,7 +124,10 @@ footer {
 
   .info-address {
     display: flex;
-    gap: 10px;
+    padding: 15px;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: #9975d5;
   }
 
   .social-medias {
@@ -167,6 +169,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin: 0px 20px;
     p {
       text-align: center;
       padding: 5px;
