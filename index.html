@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title -->
-  <title>Document</title>
+  <title>FAM - Inicio</title>
 
   <!-- Links -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/carousel.css">
   <link rel="stylesheet" href="./css/section-become-member.css">
+  <link rel="stylesheet" href="./css/navbar.css">
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -27,8 +28,26 @@
 
 <body>
 
-  <nav>
-    <!-- Código Cabeçalho Amanda -->
+  <nav class="navbar">
+    <div class="logo-nav">
+      <a class="logo" href="#"><img src="./assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+    </div>
+    <a href="#" class="button-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="list-nav">
+      <ul>
+        <li><a href="#">Nossa atuação</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Transparência</a></li>
+        <li><a href="#">Contato</a></li>
+        <div class="button-container">
+          <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+      </div>
+      </ul>
+    </div>
   </nav>
 
   <main>
@@ -96,7 +115,7 @@
 
     <section class="become-member-section">
       <h3>Transforme Vidas: Seja a Mudança que o Mundo Precisa!</h3>
-      <button class="member-button">Torne-se voluntário</button>
+      <button class="member-button">Faça parte</button>
       <div class="background-image"></div>
     </section>
 
@@ -117,6 +136,7 @@
       <button class="button-send-contact">Enviar</button>
     </div>
     <div class="container-home-links">
+      
       <button><strong>Faça parte!</strong></button>
       <div class="links-and-questions">
         <div>
@@ -127,6 +147,7 @@
           <p><a href="/index.html">Transparencia</a></p>
           <p><a href="/pages/contact.html">Contato</a></p>
           <p><a href="/index.html">Faça parte</a></p>
+
         </div>
         <div>
           <h3>Duvidas</h3>
@@ -156,6 +177,8 @@
   </footer>
 
   <script src="./js/carousel.js"></script>
+
+  <script src="./js/toogleMenu.js"></script>
 
 </body>
 
