@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: antiquewhite;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    text-transform: uppercase;
+    color: #7F53CA;
+    margin: 60px 0 0;
+}
+
+.container-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 60px 80px;
+}
+
+.top-left-content {
+    margin-right: 180px;
+}
+
+.top-left-content img {
+    width: 700px;
+    height: 440px;
+    border-radius: 60px 0 60px 60px;
+    border: 10px solid #F3F2F3;
+}
+
+.top-left-content p {
+    color: #c3c3c3;
+    margin: 5px 0;
+    font-weight: 100;
+}
+
+.top-right-content {
+    padding: 40px 0;
+}
+
+.top-right-content h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.top-right-content p {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+/*Conteúdo Projeto Gota*/
+.container-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 40px 80px;
+}
+
+.bottom-right-content {
+    padding: 40px 0;
+}
+
+.bottom-right-content h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.bottom-right-content p {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.bottom-right-content span {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#income-description {
+    margin-left: 10px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.bottom-left-content {
+    margin-left: 180px;
+}
+
+.bottom-left-content img {
+    width: 700px;
+    height: 440px;
+    border-radius: 60px 0 60px 60px;
+    border: 10px solid #333333;
+}
+
+.bottom-left-content p {
+    color: #c3c3c3;
+    margin: 5px 0;
+}
+
+
+/*Button Faça Parte*/
+
+#be-part-btn {
+    width: 180px;
+    height: 50px;
+    margin: 30px 0 20px;
+    background-color: #7F53CA;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 259ms;
+}
+
+#be-part-btn:active {
+    color: #ffffff;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#be-part-btn:disabled {
+    color: #ffffff;
+    pointer-events: none;
+}
+
+#be-part-btn:hover {
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1024px) {
+    main h1 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-top,
+    .container-bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        padding: 0;
+    }
+
+    .top-left-content,
+    .bottom-left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .top-left-content>img,
+    .bottom-left-content>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-left-content p,
+    .bottom-left-content p {
+        font-size: 14px;
+    }
+
+    .top-right-content,
+    .bottom-right-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .top-right-content h2,
+    .bottom-right-content h2 {
+        margin: 20px 0;
+    }
+
+    .top-right-content p,
+    .bottom-right-content p {
+        font-size: 20px;
+    }
+
+    #income-description {
+        margin-left: 10px;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .bottom-left-content p,
+    .top-left-content p {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,166 @@
+.about-banner {
+    display: flex;
+    max-height: 400px;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 120px;
+}
+
+.left-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 40px 40px 80px;
+}
+
+.left-side h1 {
+    color: #029EFF;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.left-side h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.right-side {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-content>img {
+    object-fit: cover;
+    transform-origin: center center;
+    object-fit: cover;
+    transform: rotate(15deg);
+    clip-path: circle(80% at 70% 20%);
+
+}
+
+.our-commitments-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 60px;
+}
+
+.span-commitments h3 {
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #029EFF;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.title-galery {
+    text-align: center;
+    color: #000;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .about-banner {
+        flex-direction: column;
+        max-height: 500px;
+        margin-bottom: 80px;
+    }
+
+    .left-side {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .left-side h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-content>img {
+        width: 500px;
+        transform: rotate(0deg);
+        clip-path: circle(50% at 50% 90%);
+    }
+
+    .our-commitments-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        border: 1px solid saddlebrown;
+        margin-bottom: 60px;
+    }
+
+    .span-commitments h3 {
+        font-size: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #029EFF;
+        margin-bottom: 40px;
+        padding: 10px 0;
+        border-radius: 12px;
+    }
+
+
+
+    .card-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}

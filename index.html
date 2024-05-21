@@ -8,12 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title -->
-  <title>Document</title>
+  <title>FAM - Inicio</title>
 
   <!-- Links -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/carousel.css">
+  <link rel="stylesheet" href="./css/section-become-member.css">
+  <link rel="stylesheet" href="./css/navbar.css">
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -26,8 +28,26 @@
 
 <body>
 
-  <nav>
-    <!-- Código Cabeçalho Amanda -->
+  <nav class="navbar">
+    <div class="logo-nav">
+      <a class="logo" href="#"><img src="./assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+    </div>
+    <a href="#" class="button-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="list-nav">
+      <ul>
+        <li><a href="/pages/cases.html">Nossa atuação</a></li>
+        <li><a href="/pages/about.html">Sobre nós</a></li>
+        <li><a href="/pages/#">Transparência</a></li>
+        <li><a href="/pages/contact.html">Contato</a></li>
+        <div class="button-container">
+          <button id="be-part-btn" onclick="window.location.href='/pages/participate.html'">Faça parte!</button>
+      </div>
+      </ul>
+    </div>
   </nav>
 
   <main>
@@ -49,8 +69,7 @@
 
           <div class="swiper-slide">
             <div class="card">
-              <img src="./assets/images/gota_borralheira.png"
-                alt="Imagem do Card">
+              <img src="./assets/images/gota_borralheira.png" alt="Imagem do Card">
               <div class="description">
                 <h2>Projeto Gota Borralheira</h2>
                 <p>Coleta de óleo de cozinha usado.</p>
@@ -60,8 +79,7 @@
 
           <div class="swiper-slide">
             <div class="card">
-              <img src="./assets/images/bazar_solidario.png"
-                alt="Imagem do Card">
+              <img src="./assets/images/bazar_solidario.png" alt="Imagem do Card">
               <div class="description">
                 <h2>Bazar Solidário</h2>
                 <p>Peças acessíveis por preço populares.</p>
@@ -71,8 +89,7 @@
 
           <div class="swiper-slide">
             <div class="card">
-              <img src="./assets/images/saude_prevencao.png"
-                alt="Imagem do Card">
+              <img src="./assets/images/saude_prevencao.png" alt="Imagem do Card">
               <div class="description">
                 <h2>Saúde Preventiva</h2>
                 <p>Avaliação e Tratamento odontológico.</p>
@@ -82,8 +99,7 @@
 
           <div class="swiper-slide">
             <div class="card">
-              <img src="./assets/images/agricultura_jardim.png"
-                alt="Imagem do Card">
+              <img src="./assets/images/agricultura_jardim.png" alt="Imagem do Card">
               <div class="description">
                 <h2>Escola de Agricultura e Jardim</h2>
                 <p>Aulas teóricas e práticas sobre a diversidade da flora.</p>
@@ -99,7 +115,7 @@
 
     <section class="become-member-section">
       <h3>Transforme Vidas: Seja a Mudança que o Mundo Precisa!</h3>
-      <button class="member-button">Faça parte!</button>
+      <button class="member-button">Faça parte</button>
       <div class="background-image"></div>
     </section>
 
@@ -115,19 +131,23 @@
         <input type="text" name="email" id="email" placeholder="E-mail">
       </div>
       <div class="container-message-contact">
-        <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+        <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
       </div>
       <button class="button-send-contact">Enviar</button>
     </div>
     <div class="container-home-links">
-      <button>Apoie a causa!</button> 
-      <div class="links-and-questions">     
+      
+      <button><strong>Faça parte!</strong></button>
+      <div class="links-and-questions">
         <div>
-          <h3>Links rapidos</h3>        
-          <p><a href="#">Home</a></p>
-          <p><a href="#">Sobre Nos</a></p>
-          <p><a href="#">Cases</a></p>
-          <p><a href="#">Contato</a></p>        
+          <h3>Links rapidos</h3>
+          <p><a href="/index.html">Home</a></p>
+          <p><a href="/pages/cases.html">Nossa atuação</a></p>
+          <p><a href="/pages/about.html">Sobre Nos</a></p>
+          <p><a href="/index.html">Transparencia</a></p>
+          <p><a href="/pages/contact.html">Contato</a></p>
+          <p><a href="/index.html">Faça parte</a></p>
+
         </div>
         <div>
           <h3>Duvidas</h3>
@@ -138,26 +158,27 @@
             <p>Sabado: 08h as 14h</p>
             <p>Exeto feriados</p>
           </div>
+        </div>
       </div>
-    </div>
     </div>
     <div class="container-home-info">
       <div class="info-address">
+        <p>Associacao a Forca do Amor</p>
         <p>CNPJ: 12.345.678/0001-99</p>
         <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
       </div>
-      <div class="fam">
-        <p>Associacao a Forca do Amor</p>
-      </div>
+
       <div class="social-medias">
-        <a href="#"><img src="./icons/facebookIcon.svg" alt="Facebook"></a>
-        <a href="#"><img src="./icons/instagramIcon.svg" alt="Instagram"></a>
-        <a href="#"><img src="./icons/emailIcon.svg" alt="Email"></a>
+        <a href="#"><img src="./assets/icons/facebookIcon.svg" alt="Facebook"></a>
+        <a href="#"><img src="./assets/icons/instagramIcon.svg" alt="Instagram"></a>
+        <a href="#"><img src="./assets/icons/emailIcon.svg" alt="Email"></a>
       </div>
     </div>
   </footer>
 
   <script src="./js/carousel.js"></script>
+
+  <script src="./js/toogleMenu.js"></script>
 
 </body>
 
