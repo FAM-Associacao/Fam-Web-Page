@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faça Parte!</title>
+  <title>Fam - Faça Parte!</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/participate.css">
 </head>
+
 <body>
-  <footer>    
+
+  <nav class="navbar">
+    <div class="logo-nav">
+      <a class="logo" href="#"><img src="../assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+    </div>
+    <a href="#" class="button-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="list-nav">
+      <ul>
+        <li><a href="/pages/cases.html">Nossa atuação</a></li>
+        <li><a href="/pages/about.html">Sobre nós</a></li>
+        <li><a href="/pages/#">Transparência</a></li>
+        <li><a href="/pages/contact.html">Contato</a></li>
+        <div class="button-container">
+          <button id="be-part-btn" onclick="window.location.href='/pages/participate.html'">Faça parte!</button>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container-donation">
+        
+        
+      </div>
+    </section>
+
+  </main>
+  <footer>
     <div class="container-home-links">
       <button><strong>Faça parte!</strong></button>
       <div class="links-and-questions">
@@ -47,5 +83,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/toogleMenu.js"></script>
 </body>
+
 </html>

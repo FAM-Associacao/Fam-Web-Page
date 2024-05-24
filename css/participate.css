@@ -1,0 +1,7 @@
+main {
+  background-image: url('../assets/images/background-participate.png');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
