@@ -89,12 +89,12 @@ aside::before {
     justify-content: center;
     align-items: center;
     height: 50vh; 
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .info-box {
-    background-color: #FFBB02;
-    border-radius: 0px 80px 0px 80px;
+    background-color: #333333;
+    border-radius: 100px;
     padding: 50px;
     display: flex;
     justify-content: space-around;
@@ -103,6 +103,10 @@ aside::before {
 
 .info {
     text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.467);
+    border-radius: 100px;
+    width: 21%;
 }
 
 .info h6 {
@@ -274,6 +278,86 @@ aside::before {
 
 
                                                         /* RESPONSIVIDADE TOTAL */
+
+                                                        
+                                                        
+@media only screen and (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .info h6 {
+        font-size: 40px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h6 {
+        font-size: 32px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .info h6 {
+        font-size: 40px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h6 {
+        font-size: 32px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     .container {
