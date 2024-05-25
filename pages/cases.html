@@ -4,16 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAM - Nossa atuação</title>
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/cases.css">
     <link rel="stylesheet" href="/css/section-become-member.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+
+    <script src="../js/toogleMenu.js"></script>
+
 </head>
 
 <body>
-    <!--Header Area-->
+
+    <nav class="navbar">
+        <div class="logo-nav">
+            <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+        </div>
+        <a href="#" class="button-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-nav">
+            <ul>
+                <li><a href="/pages/cases.html">Nossa atuação</a></li>
+                <li><a href="/pages/about.html">Sobre nós</a></li>
+                <li><a href="/pages/#">Transparência</a></li>
+                <li><a href="/pages/contact.html">Contato</a></li>
+                <div class="button-container">
+                    <button id="be-part-btn" style="margin: 0;"
+                        onclick="window.location.href='/pages/participate.html'">Faça
+                        parte!</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
     <main>
 
         <h1>Nossa Atuação</h1>
@@ -21,7 +49,8 @@
         <div class="container-top">
 
             <div class="top-left-content">
-                <img src="/assets/images/saude_prevencao.png" alt="">
+                <img src="/assets/images/saude_prevencao.png"
+                    alt="Imagem de uma médica tirando pressão arterial de um senhor.">
                 <p>Designed by Freepik</p>
             </div>
 
@@ -30,7 +59,9 @@
                 <p>O projeto visa promover a saúde preventiva, com foco no câncer bucal, através do atendimento
                     voluntário de dentistas da USP. Além disso, diferentes especialistas voluntários se uniram para
                     viabilizar ações preventivas adicionais, como avaliações de pressão arterial, medição de diabetes e
-                    consultas oftalmológicas. A Organização da Sociedade Civil (OSC) atua como intermediária.</p>
+                    consultas oftalmológicas. A FAM atua como facilitadora, e quando necessário, intermedia o
+                    encaminhamento ao posto de saúde público ou aos equipamentos públicos de Assistência Social como
+                    CRAS e CREAS do município.</p>
                 <div class="button-container">
                     <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
                 </div>
@@ -39,7 +70,8 @@
 
         <div class="container-bottom">
             <div class="bottom-left-content">
-                <img width="610" height="440" src="/assets/images/gota_borralheira.png" alt="">
+                <img width="610" height="440" src="/assets/images/gota_borralheira.png"
+                    alt="Imagem de coleta de óleo de panela.">
                 <p>Designed by Freepik</p>
             </div>
 
@@ -50,7 +82,29 @@
                     projeto introduz noções básicas sobre a preservação do meio ambiente e seus recursos naturais.
                     Também recebe outros tipos de resíduos recicláveis, e os encaminha para empresas especializadas.</p>
                 <span>
-                    <img src="/assets/icons/income.png" alt="">
+                    <img src="/assets/icons/income.png" alt="Icone de valor financeiro.">
+                    <h4 id="income-description">A renda gerada é utilizada para cobrir as despesas da organização.</h4>
+                </span>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-top">
+
+            <div class="top-left-content">
+                <img src="/assets/images/bazar_solidario.png" alt="Imagem de um homem escolhendo roupas em um bazar.">
+                <p>Designed by Freepik</p>
+            </div>
+
+            <div class="top-right-content">
+                <h2>Bazar solidário</h2>
+                <p>Foi estabelecido um brechó para melhorar a gestão das doações, onde as peças são revendidas a preços
+                    acessíveis, variando de R$ 2,00 a R$ 5,00. Além de prolongar a vida útil dos itens, essa iniciativa
+                    promove a conscientização sobre a importância da economia circular.</p>
+                <span>
+                    <img src="/assets/icons/income.png" alt="Icone com valor financeiro.">
                     <h4 id="income-description">A renda gerada é utilizada para cobrir as despesas da organização.</h4>
                 </span>
                 <div class="button-container">
@@ -65,28 +119,10 @@
             <div class="background-image"></div>
         </section>
 
-        <div class="container-top">
-
-            <div class="top-left-content">
-                <img src="/assets/images/bazar_solidario.png" alt="">
-                <p>Designed by Freepik</p>
-            </div>
-
-            <div class="top-right-content">
-                <h2>Bazar solidário</h2>
-                <p>Foi estabelecido um brechó para melhorar a gestão das doações, onde as peças são revendidas a preços
-                    acessíveis, variando de R$ 2,00 a R$ 5,00. Além de prolongar a vida útil dos itens, essa iniciativa
-                    promove a conscientização sobre a importância da economia circular. A renda gerada é direcionada
-                    para cobrir as despesas fixas da organização.</p>
-                <div class="button-container">
-                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
-                </div>
-            </div>
-        </div>
-
         <div class="container-bottom">
             <div class="bottom-left-content">
-                <img width="610" height="440" src="/assets/images/agricultura_jardim.png" alt="">
+                <img width="610" height="440" src="/assets/images/agricultura_jardim.png"
+                    alt="Imagem de uma mão humana cultivando flores na terra.">
                 <p>Designed by Freepik</p>
             </div>
 
@@ -95,8 +131,8 @@
                 <p>Um especialista voluntário em botânica e paisagismo oferece aulas teóricas e práticas sobre a
                     diversidade da flora, incluindo informações sobre plantas tóxicas. O programa ensina noções básicas
                     de jardinagem e paisagismo.</p>
-                    <br>
-                    <hr>
+                <br>
+                <hr>
                 <span>
                     <h4 id="income-description">Ao término do período, os participantes recebem certificação.</h4>
                 </span>
@@ -106,58 +142,115 @@
             </div>
         </div>
 
+        <div class="container-top">
+
+            <div class="top-left-content">
+                <img src="/assets/images/coleta_mat.png" alt="">
+                <p>Designed by Freepik</p>
+            </div>
+
+            <div class="top-right-content">
+                <h2>Coleta e destinação de materiais recicláveis</h2>
+                <p>Preocupados com o meio ambiente e em reduzir os problemas ambientais já existentes ofertamos a
+                    possibilidade de coleta de materiais recicláveis diversos para que esses itens não sejam descartados
+                    de forma incorreta nas vias públicas, em locais privados ou em qualquer forma que afete diretamente
+                    a natureza.</p>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-bottom">
+            <div class="bottom-left-content">
+                <img width="610" height="440" src="/assets/images/doacoes.png"
+                    alt="Imagem com uma caixa de doação de uma cesta básica.">
+                <p>Designed by Freepik</p>
+            </div>
+
+            <div class="bottom-right-content">
+                <h2>Doação de cestas básicas</h2>
+                <p>Garantir a segurança alimentar mínima é uma grande preocupação em territórios onde a vulnerabilidade
+                    pessoal e social esteja presente. É um esforço de assegurar que esses indivíduos tenham acesso digno
+                    a alimentos seguros, nutritivos e saudáveis. <br>
+                    A FAM está sempre atendendo as necessidades pontuais e emergenciais das famílias que estão
+                    cadastradas por meio de parcerias e apoiadores da causa.</p>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-top">
+
+            <div class="top-left-content">
+                <img src="/assets/images/palestras_edu.png" alt="Imagem de um educador ensinando em uma sala.">
+                <p>Designed by Freepik</p>
+            </div>
+
+            <div class="top-right-content">
+                <h2>Palestras educativas</h2>
+                <p>O desenvolvimento humano e social é um compromisso da nossa organização e estamos sempre dispostos em
+                    oferecer Informações sobre temas de interesse comunitário, temas de relevância e interesse público.
+                </p>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container-home-contact">
-          <h3>Entre em contato</h3>
-          <div class="container-inputs-contact">
-            <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-            <input type="text" name="email" id="email" placeholder="E-mail">
-          </div>
-          <div class="container-message-contact">
-            <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
-          </div>
-          <button class="button-send-contact">Enviar</button>
+            <h3>Entre em contato</h3>
+            <div class="container-inputs-contact">
+                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="container-message-contact">
+                <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
+            </div>
+            <button class="button-send-contact">Enviar</button>
         </div>
         <div class="container-home-links">
-          <button><strong>Faça parte!</strong></button>
-          <div class="links-and-questions">
-            <div>
-              <h3>Links rapidos</h3>
-              <p><a href="/index.html">Home</a></p>
-              <p><a href="/pages/cases.html">Nossa atuação</a></p>
-              <p><a href="/pages/about.html">Sobre Nos</a></p>
-              <p><a href="/index.html">Transparencia</a></p>
-              <p><a href="/pages/contact.html">Contato</a></p>
-              <p><a href="/index.html">Faça parte</a></p>
+            <button><strong>Faça parte!</strong></button>
+            <div class="links-and-questions">
+                <div>
+                    <h3>Links rapidos</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/pages/cases.html">Nossa atuação</a></p>
+                    <p><a href="/pages/about.html">Sobre Nos</a></p>
+                    <p><a href="/index.html">Transparencia</a></p>
+                    <p><a href="/pages/contact.html">Contato</a></p>
+                    <p><a href="/index.html">Faça parte</a></p>
+                </div>
+                <div>
+                    <h3>Duvidas</h3>
+                    <p><a href="#">Politica de privacidade</a></p>
+                    <p><a href="#">Termos e condicoes</a></p>
+                    <div class="opening-hours">
+                        <p>Segunda a sexta: 08h as 18h</p>
+                        <p>Sabado: 08h as 14h</p>
+                        <p>Exeto feriados</p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h3>Duvidas</h3>
-              <p><a href="#">Politica de privacidade</a></p>
-              <p><a href="#">Termos e condicoes</a></p>
-              <div class="opening-hours">
-                <p>Segunda a sexta: 08h as 18h</p>
-                <p>Sabado: 08h as 14h</p>
-                <p>Exeto feriados</p>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="container-home-info">
-          <div class="info-address">
-            <p>Associacao a Forca do Amor</p>
-            <p>CNPJ: 12.345.678/0001-99</p>
-            <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
-          </div>
-    
-          <div class="social-medias">
-            <a href="#"><img src="../assets/icons/facebookIcon.svg" alt="Facebook"></a>
-            <a href="#"><img src="../assets/icons/instagramIcon.svg" alt="Instagram"></a>
-            <a href="#"><img src="../assets/icons/emailIcon.svg" alt="Email"></a>
-          </div>
+            <div class="info-address">
+                <p>Associacao a Forca do Amor</p>
+                <p>CNPJ: 12.345.678/0001-99</p>
+                <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
+            </div>
+
+            <div class="social-medias">
+                <a href="#"><img src="../assets/icons/facebookIcon.svg" alt="Facebook"></a>
+                <a href="#"><img src="../assets/icons/instagramIcon.svg" alt="Instagram"></a>
+                <a href="#"><img src="../assets/icons/emailIcon.svg" alt="Email"></a>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
