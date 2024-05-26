@@ -1,103 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparência</title>
-    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/transparencia.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo-nav">
+            <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+        </div>
+        <a href="#" class="button-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-nav">
+            <ul>
+                <li><a href="/pages/cases.html">Nossa atuação</a></li>
+                <li><a href="/pages/about.html">Sobre nós</a></li>
+                <li><a href="/pages/#">Transparência</a></li>
+                <li><a href="/pages/contact.html">Contato</a></li>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='/pages/participate.html'">Faça parte!</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-
-    <div class="text">
-        <h1>Alinhado com o nosso compromisso e integridade, a FAM publica seus principais documentos <br> institucionais e de gestão.</h1>
-    </div>
-
-    <div class="links-transparencia">
-        <ul>
-
-
-            <li>
-                Estatuto Social
-                <i>Visualizar</i>
-            </li>
-
-            <li>CNPJ
-                <i>Visualizar</i>
-            </li>
-
-            <li>Certificações
-                <i>Visualizar</i>
-            </li>
-
-            <li>Demonstrações Financeiras
-                <i>Visualizar</i>
-            </li>
-
-            <li>Relatório de Atividades e Impacto
-                <i>Visualizar</i>
-            </li>
-
-        </ul>
-    </div>
-
-
+        <div class="background-image"></div>
+        <div class="content">
+            <div class="text">
+                <h1>Alinhado com o nosso compromisso e integridade, a FAM publica seus principais documentos <br> institucionais e de gestão.</h1>
+            </div>
+            <div class="links-transparencia">
+                <ul>
+                    <li>
+                        Estatuto Social
+                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok">Visualizar</a></button>
+                    </li>
+                    <li>
+                        CNPJ
+                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Certificações
+                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Demonstrações Financeiras
+                        <button class="visualizar-link"><a href="URL_DAS_DEMONSTRACOES_FINANCEIRAS">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Relatório de Atividades e Impacto
+                        <button class="visualizar-link"><a href="URL_DO_RELATORIO_DE_ATIVIDADES">Visualizar</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
-
-
     <footer>
-        <div class="container-home-contact">
-            <h3>Entre em contato</h3>
-            <div class="container-inputs-contact">
-                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-                <input type="text" name="email" id="email" placeholder="E-mail">
-            </div>
-            <div class="container-message-contact">
-                <textarea name="message" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
-            </div>
-            <button class="button-send-contact">Enviar</button>
-        </div>
         <div class="container-home-links">
-            <button>Apoie a causa!</button>
+            <button><strong>Faça parte!</strong></button>
             <div class="links-and-questions">
                 <div>
-                    <h3>Links rapidos</h3>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">Sobre Nos</a></p>
-                    <p><a href="#">Cases</a></p>
-                    <p><a href="#">Contato</a></p>
+                    <h3>Links rápidos</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/pages/cases.html">Nossa atuação</a></p>
+                    <p><a href="/pages/about.html">Sobre Nós</a></p>
+                    <p><a href="/index.html">Transparência</a></p>
+                    <p><a href="/pages/contact.html">Contato</a></p>
+                    <p><a href="/index.html">Faça parte</a></p>
                 </div>
                 <div>
-                    <h3>Duvidas</h3>
-                    <p><a href="#">Politica de privacidade</a></p>
-                    <p><a href="#">Termos e condicoes</a></p>
+                    <h3>Dúvidas</h3>
+                    <p><a href="#">Política de privacidade</a></p>
+                    <p><a href="#">Termos e condições</a></p>
                     <div class="opening-hours">
-                        <p>Segunda a sexta: 08h as 18h</p>
-                        <p>Sabado: 08h as 14h</p>
-                        <p>Exeto feriados</p>
+                        <p>Segunda a sexta: 08h às 18h</p>
+                        <p>Sábado: 08h às 14h</p>
+                        <p>Exceto feriados</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-home-info">
             <div class="info-address">
+                <p>Associação a Força do Amor</p>
                 <p>CNPJ: 12.345.678/0001-99</p>
-                <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
-            </div>
-            <div class="fam">
-                <p>Associacao a Forca do Amor</p>
+                <p>Endereço: Rua Fictícia, 0 Cidade Fictícia - SP</p>
             </div>
             <div class="social-medias">
-                <a href="#"><img src="../icons/facebookIcon.svg" alt="Facebook"></a>
-                <a href="#"><img src="../icons/instagramIcon.svg" alt="Instagram"></a>
-                <a href="#"><img src="../icons/emailIcon.svg" alt="Email"></a>
+                <a href="#"><img src="./assets/icons/facebookIcon.svg" alt="Facebook"></a>
+                <a href="#"><img src="./assets/icons/instagramIcon.svg" alt="Instagram"></a>
+                <a href="#"><img src="./assets/icons/emailIcon.svg" alt="Email"></a>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>

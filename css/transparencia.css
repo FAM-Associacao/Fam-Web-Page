@@ -1,25 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.background-image {
+    background-image: url('/assets/images/FAM-Pattern-PNG1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%); 
+    opacity: 0.1; 
+    z-index: -1;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
 
 
 .text h1 {
-    padding: 40px;
+    margin-top: 60px;
+    padding: 60px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
     z-index: 0;
 }
 
+
 .links-transparencia ul {
     list-style-type: none;
-    padding: 40px;
+    margin-left: 50px;
+    margin-top: -10px;
 }
+
 
 .links-transparencia li {
     display: flex;
@@ -27,25 +60,39 @@
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 20px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     background-color: #333333;
     color: #ffffff;
     width: 740px;
-    box-sizing: border-box; 
     padding: 20px; 
     border-radius: 30px;
-    position: relative; 
 }
 
-.links-transparencia ul li i {
-    background-color: #7F52CB;
+
+.links-transparencia ul li button {
+    background-color: rgba(127, 82, 203, 0.7); 
     padding: 12px 32px;
     border-radius: 100px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, outline 0.3s ease;
 }
 
-.download-icon {
-    margin-left: auto; 
+.links-transparencia ul li button a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-transparencia ul li button:hover {
+    background-color: rgba(80, 46, 137, 0.7); 
+    outline: 2px solid #F2F2F2; 
+}
+
+.visualizar-link a {
+    color: blue; 
+    text-decoration: none; 
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease, outline 0.3s ease; 
 }
