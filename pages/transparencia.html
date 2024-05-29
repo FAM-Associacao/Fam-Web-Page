@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/css/transparencia.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/navbar.css">
+   
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -41,27 +45,44 @@
                 <ul>
                     <li>
                         Estatuto Social
-                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok">Visualizar</a></button>
+                        <button class="visualizar-link" id="botao1" data-href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok"><a href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok">Visualizar</a></button>
                     </li>
                     <li>
                         CNPJ
-                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24">Visualizar</a></button>
+                        <button class="visualizar-link" id="botao2" data-href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24"><a href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24">Visualizar</a></button>
                     </li>
                     <li>
                         Certificações
-                        <button class="visualizar-link"><a href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008">Visualizar</a></button>
+                        <button class="visualizar-link" id="botao3" data-href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008"><a href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008">Visualizar</a></button>
                     </li>
                     <li>
                         Demonstrações Financeiras
-                        <button class="visualizar-link"><a href="URL_DAS_DEMONSTRACOES_FINANCEIRAS">Visualizar</a></button>
+                        <button class="inativo"><a href="#">Visualizar</a></button>
                     </li>
                     <li>
                         Relatório de Atividades e Impacto
-                        <button class="visualizar-link"><a href="URL_DO_RELATORIO_DE_ATIVIDADES">Visualizar</a></button>
+                        <button class="inativo"><a href="#">Visualizar</a></button>
                     </li>
                 </ul>
             </div>
         </div>
+        
+        <script>
+            if (window.matchMedia("(max-width: 550px)").matches) {
+                // Adiciona o link diretamente ao botão
+                document.getElementById("botao1").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+        
+                document.getElementById("botao2").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+        
+                document.getElementById("botao3").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+            }
+        </script>
     </main>
 
     <footer>
