@@ -160,7 +160,6 @@ footer {
   .links-and-questions {
     padding: 15px;
     gap: 10px;
-    margin-left: 30px;
   }
   .container-home-info {
     flex-direction: column-reverse;

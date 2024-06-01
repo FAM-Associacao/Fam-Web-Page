@@ -3,7 +3,7 @@ body {
   background-position: center;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 main {
@@ -11,16 +11,18 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 150px;
   gap: 80px;
 
 }
 
 .donation-container {
   display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
   padding: 10px;
-  width: 80%;
-  height: 450px;
+  gap: 20px;
   background-color: #333333;
   border-radius: 0 80px 0;
 }
@@ -28,15 +30,14 @@ main {
 .call-donation-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 50px;
-  color: #fff;
+  gap: 20px;
+  padding: 20px;
+  color: #F2F2F2;
+  width: 95%;
 }
-
 .info-account {
   display: flex;
   flex-direction: column;
-  width: 60%;
   gap: 15px;
   align-items: right;
 
@@ -48,30 +49,36 @@ main {
 .info-QRcode {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
-  padding: 50px;
-  color: #fff;
+  color: #F2F2F2;
+  margin-bottom: 10px;
 }
 
 .volunteer-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
   padding: 10px;
+  gap: 20px;
 }
 
 .call-volunteer-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 50px;
-  width: 50%;
+  gap: 20px;
+
+  h3 {
+    color: #7F52CB;
+  }
 }
 
-.info-volunteer {
+.item-info-volunteer {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 25px;
 }
 
 .form-volunteer {
@@ -79,7 +86,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 95%;
   gap: 20px;
 }
 
@@ -87,7 +94,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 70%;
+  width: 100%;
+ 
 
   input {
     padding: 8px;
@@ -117,45 +125,27 @@ main {
   }
 }
 
-/* Responsividade Mobile */
-@media (width <= 576px) {
+@media (width > 1024px) {
   .donation-container {
-    display: flex;
-    background-color: #333333;
-    border-radius: 0 80px 0;
-  }
-  
-  .call-donation-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 50px;
     justify-content: space-between;
-    padding: 50px;
-    color: #fff;
+    width: 70%;
   }
-  
-  .info-account {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    gap: 15px;
-    align-items: right;
-  
-    h1 {
-      color: #FFBB02;
-    }
+
+  .call-donation-container {
+    justify-content: space-between;
+    width: 50%;
   }
-  
+
   .info-QRcode {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 15px;
-    padding: 50px;
-    color: #fff;
+    width: 50%;
   }
-}
 
-/* Responsividade Tablet */
-@media (width <= 900px) {
-
+  .volunteer-container {
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-between;
+    width: 80%;
+  }
 }

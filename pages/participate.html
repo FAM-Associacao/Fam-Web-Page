@@ -15,7 +15,7 @@
 
   <nav class="navbar">
     <div class="logo-nav">
-      <a class="logo" href="#"><img src="../assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+      <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
     </div>
     <a href="#" class="button-menu" onclick="toggleMenu()">
       <span class="bar"></span>
@@ -28,8 +28,9 @@
         <li><a href="/pages/about.html">Sobre nós</a></li>
         <li><a href="/pages/#">Transparência</a></li>
         <li><a href="/pages/contact.html">Contato</a></li>
-        <div class="button-container">
-          <button id="be-part-btn" onclick="window.location.href='/pages/participate.html'">Faça parte!</button>
+        <div class="nav-button-container">
+          <button class="btn-nav" style="margin: 0;" onclick="window.location.href='/pages/participate.html'">Faça
+            parte!</button>
         </div>
       </ul>
     </div>
@@ -51,20 +52,29 @@
         </div>
       </div>
       <div class="info-QRcode">
-        <img src="../assets/images/Qr-Code.svg" alt="Qr-Code doar">
+        <img src="/assets/images/Qr-Code.svg" alt="Qr-Code doar">
         <h3>Escaneie o QR Code</h3>
       </div>
     </section>
     <section class="volunteer-container">
-      <div class="call-volunteer-container">
-        <div class="info-volunteer">
-          <h3>Doação física</h3>
-          <p>
-            Sua contribuição é essencial para garantir que possamos continuar oferecendo assistência
-            e apoio a quem mais precisa! Aguardamos seu contato!
-          </p>
-          <img src="../assets/icons/itensDonation.svg" alt="itens para doar">
+      <div class="call-volunteer-container">        
+        <h3>Doação física</h3>
+        <p>
+          Sua contribuição é essencial para garantir que possamos continuar oferecendo assistência
+          e apoio a quem mais precisa! Aguardamos seu contato!
+        </p>
+        <div class="item-info-volunteer">
+          <img src="../assets/icons/roupa.svg" alt="imagem roupas">
+          <span>Roupas</span>
         </div>
+        <div class="item-info-volunteer">
+          <img src="../assets/icons/brinquedo.svg" alt="imagem brinquedo">
+          <span>Brinquedos</span>
+        </div>
+        <div class="item-info-volunteer">
+          <img src="../assets/icons/alimento.svg" alt="imagem alimento">
+          <span>Alimentos</span>
+        </div>        
       </div>
       <form class="form-volunteer">
         <h3>Entre em contato para fazer sua doação</h3>
@@ -116,7 +126,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/toogleMenu.js"></script>
+  <script src="/js/toogleMenu.js"></script>
 </body>
 
 </html>
