@@ -76,12 +76,14 @@
           <span>Alimentos</span>
         </div>        
       </div>
-      <form class="form-volunteer">
+      <form class="form-volunteer" action="https://formsubmit.co/cleitson.ftw@gmail.com" method="POST">
         <h3>Entre em contato para fazer sua doação</h3>
         <div class="form-group">
           <input type="text" id="name" name="name" placeholder="Nome Completo" required>
           <input type="number" id="phone" name="phone" placeholder="Telefone" required>
-          <input type="text" id="donation" name="donation" placeholder="O que deseja doar?" required>
+          <input type="text" id="donation" name="message" placeholder="O que deseja doar?" required>
+          <input type="hidden" name="_subject" value="New submission!">
+          <input type="hidden" name="_template" value="table">
           <button type="submit">Enviar</button>
         </div>
       </form>
