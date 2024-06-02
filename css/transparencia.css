@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.background-image {
+    background-image: url('/assets/images/FAM-Pattern-PNG1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%); 
+    opacity: 0.1; 
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.text h1 {
+    margin-top: 60px;
+    padding: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    z-index: 0;
+}
+
+.links-transparencia ul {
+    list-style-type: none;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.links-transparencia li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #333333;
+    color: #ffffff;
+    width: 740px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* Estilo para todos os botões ativos */
+
+.links-transparencia ul li .visualizar-link {
+    background-color: rgba(127, 82, 203, 0.7);
+    padding: 12px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, outline 0.3s ease;
+}
+
+.links-transparencia ul li .visualizar-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-transparencia ul li .visualizar-link:hover {
+    background-color: rgba(80, 46, 137, 0.7);
+    outline: 2px solid #F2F2F2;
+}
+
+.visualizar-link a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease, outline 0.3s ease;
+}
+
+/* Estilo específico para botões inativos */
+
+.links-transparencia ul li .inativo {
+    background-color: rgba(211, 211, 211, 0.7);
+    padding: 12px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+    border: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.links-transparencia ul li .inativo a {
+    color: rgb(128, 128, 128);
+    pointer-events: none;
+    text-decoration: none;
+}
+
+/* Responsividade */
+
+
+@media (max-width: 880px) {
+    .text h1 {
+        font-size: 1.2rem;
+        padding: 50px;
+    }
+    .links-transparencia li {
+        width: auto;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    /* Estilo para todos os botões */
+    .links-transparencia ul li .visualizar-link,
+    .links-transparencia ul li .inativo {
+        padding: 8px;
+        border-radius: 100%; 
+        width: 50px; 
+        height: 50px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Estilo para botões ativos */
+    .links-transparencia ul li .visualizar-link {
+        background-color: rgba(127, 82, 203, 0.7);
+        transition: background-color 0.3s ease, outline 0.3s ease;
+    }
+
+    /* Estilo para botões inativos */
+    .links-transparencia ul li .inativo {
+        background-color: rgba(211, 211, 211, 0.7);
+    }
+
+    /* Ícone dentro dos botões */
+    .links-transparencia ul li .visualizar-link::before,
+    .links-transparencia ul li .inativo::before {
+        content: url('../assets/icons/eye_svgrepo.com.png'); 
+        width: 30px;
+        height: 30px; 
+    }
+
+    /* Esconde o texto "Visualizar" */
+    .links-transparencia ul li .visualizar-link a,
+    .links-transparencia ul li .inativo a {
+        display: none;
+    }
+}

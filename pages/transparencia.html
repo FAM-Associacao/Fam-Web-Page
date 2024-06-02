@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência</title>
+    <link rel="stylesheet" href="/css/transparencia.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+   
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-nav">
+            <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+        </div>
+        <a href="#" class="button-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-nav">
+            <ul>
+                <li><a href="/pages/cases.html">Nossa atuação</a></li>
+                <li><a href="/pages/about.html">Sobre nós</a></li>
+                <li><a href="/pages/#">Transparência</a></li>
+                <li><a href="/pages/contact.html">Contato</a></li>
+                <div class="button-container">
+                    <button id="be-part-btn" onclick="window.location.href='/pages/participate.html'">Faça parte!</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="background-image"></div>
+        <div class="content">
+            <div class="text">
+                <h1>Alinhado com o nosso compromisso e integridade, a FAM publica seus principais documentos <br> institucionais e de gestão.</h1>
+            </div>
+            <div class="links-transparencia">
+                <ul>
+                    <li>
+                        Estatuto Social
+                        <button class="visualizar-link" id="botao1" data-href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok"><a href="https://issuu.com/aforcadoamor.fam/docs/ata_assembleia_elei_o22-ok">Visualizar</a></button>
+                    </li>
+                    <li>
+                        CNPJ
+                        <button class="visualizar-link" id="botao2" data-href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24"><a href="https://issuu.com/aforcadoamor.fam/docs/cnpj_fam_maio24">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Certificações
+                        <button class="visualizar-link" id="botao3" data-href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008"><a href="https://issuu.com/aforcadoamor.fam/docs/utilidade_p_blica_municipal_2008">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Demonstrações Financeiras
+                        <button class="inativo"><a href="#">Visualizar</a></button>
+                    </li>
+                    <li>
+                        Relatório de Atividades e Impacto
+                        <button class="inativo"><a href="#">Visualizar</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <script>
+            if (window.matchMedia("(max-width: 550px)").matches) {
+                // Adiciona o link diretamente ao botão
+                document.getElementById("botao1").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+        
+                document.getElementById("botao2").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+        
+                document.getElementById("botao3").addEventListener("click", function() {
+                    window.location.href = this.getAttribute("data-href");
+                });
+            }
+        </script>
+    </main>
+
+    <footer>
+        <div class="container-home-links">
+            <button><strong>Faça parte!</strong></button>
+            <div class="links-and-questions">
+                <div>
+                    <h3>Links rápidos</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/pages/cases.html">Nossa atuação</a></p>
+                    <p><a href="/pages/about.html">Sobre Nós</a></p>
+                    <p><a href="/index.html">Transparência</a></p>
+                    <p><a href="/pages/contact.html">Contato</a></p>
+                    <p><a href="/index.html">Faça parte</a></p>
+                </div>
+                <div>
+                    <h3>Dúvidas</h3>
+                    <p><a href="#">Política de privacidade</a></p>
+                    <p><a href="#">Termos e condições</a></p>
+                    <div class="opening-hours">
+                        <p>Segunda a sexta: 08h às 18h</p>
+                        <p>Sábado: 08h às 14h</p>
+                        <p>Exceto feriados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-home-info">
+            <div class="info-address">
+                <p>Associação a Força do Amor</p>
+                <p>CNPJ: 12.345.678/0001-99</p>
+                <p>Endereço: Rua Fictícia, 0 Cidade Fictícia - SP</p>
+            </div>
+            <div class="social-medias">
+                <a href="#"><img src="./assets/icons/facebookIcon.svg" alt="Facebook"></a>
+                <a href="#"><img src="./assets/icons/instagramIcon.svg" alt="Instagram"></a>
+                <a href="#"><img src="./assets/icons/emailIcon.svg" alt="Email"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

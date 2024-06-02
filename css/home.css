@@ -1,0 +1,623 @@
+                                                /* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+                                          /* CONFIG INICIAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                /* HOME */
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    padding: 200px;
+}
+
+.home p {
+    font-family: "Itim", cursive;
+    color: #039FFF;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.home h5 {
+    font-family: "Itim", cursive;
+    color: #333333;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+                                                /* BOTÃO HOME */
+
+.btn-façaparte-home {
+    font-family: "Montserrat", sans-serif;
+    padding: 12px 32px;
+    background-color: #7F52CB;
+    color: #F2F2F2;
+    border: none; 
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-façaparte-home:hover {
+    background-color: #502e89;
+    color: #F2F2F2;
+}
+
+                                                /* IMAGEM HOME */
+
+aside {
+    position: relative;
+    margin-left: 70px; 
+    
+}
+
+aside img {
+    max-width: 100%;
+}
+
+aside::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -15%; 
+    right: -20px;
+    bottom: -80px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: solid #7F52CB 15px;
+    z-index: -1;
+}
+
+                                                    /*HOME INFOBOX */
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    margin-bottom: 120px;
+}
+
+.info-box {
+    background-color: #333333;
+    border-radius: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%; 
+}
+
+.info {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.467);
+    border-radius: 100px;
+    width: 21%;
+}
+
+.info h6 {
+    font-family: "Itim", cursive;
+    font-size: 64px;
+    color: white;
+    font-weight: 300;
+}
+
+.info p {
+    font-family: "Itim", cursive;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+}
+
+                                                    /* SOBRE NÓS */
+
+.container {
+    display: flex;
+}
+
+.container-about {
+    flex: 1;
+}
+
+
+                                                /* SOBRE NÓS - BOTÃO (SAIBA MAIS) */
+
+
+.btn-home-saiba-mais {
+    font-family: "Montserrat", sans-serif;
+    padding: 12px 32px;
+    background-color: #7F52CB;
+    color: #F2F2F2;
+    border: none; 
+    border-radius: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.btn-home-saiba-mais:hover {
+    background-color: #502e89;
+    color: #F2F2F2;
+}
+
+.btn2-home-saiba-mais {
+    font-family: "Montserrat", sans-serif;
+    padding: 12px 32px;
+    background-color: #7F52CB;
+    color: #F2F2F2;
+    border: none; 
+    border-radius: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+    
+}
+
+.btn2-home-saiba-mais:hover {
+    background-color: #502e89;
+    color: #F2F2F2;
+}
+
+                                                            /* SOBRE NÓS - RESUMO */
+
+.resumo {
+    flex: 1;
+    padding: 50px;
+}
+
+.resumo p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about {
+    padding: 40px; 
+    margin-left: 350px;
+}
+
+.about p {
+    font-family: "Itim", cursive;
+    color: #039FFF;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.about h6 {
+    font-family: "Itim", cursive;
+    color: #333333;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+                                                            /* EIXO DE ATIVIDADES */
+
+.container-eixo {
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;
+    margin-top: 90px;
+}
+
+.container-eixo p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #333333;
+}
+
+.list-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.list ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.list ul li {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 20px;
+    background-color: #333333; 
+    border-radius: 40px; 
+    color: white; 
+    text-align: center;
+    width: 300px;
+    height: 200px; 
+    box-sizing: border-box; 
+    flex-direction: column; 
+    padding: 20px; 
+}
+
+.list ul li img {
+    margin-bottom: 10px; 
+}
+
+.ODS {
+    flex: 1;
+    padding: 50px;
+}
+
+.ODS p {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+                                                /* IMAGEM EIXO DAS ATIVIDADES */
+
+.img-ods {
+    max-width: 70%;
+    margin-left: 25%;
+}
+
+
+
+                                                        /* RESPONSIVIDADE TOTAL */
+
+                                                        
+                                                        
+@media only screen and (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .info h6 {
+        font-size: 40px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h6 {
+        font-size: 32px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .info h6 {
+        font-size: 40px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h6 {
+        font-size: 32px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .home {
+        padding: 50px; 
+    }
+
+    .home p {
+        font-size: 24px;
+    }
+
+    .home h5 {
+        font-size: 48px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .info-box {
+        flex-direction: column; 
+        align-items: center;
+        padding: 30px;
+    }
+
+    .about, .resumo {
+        text-align: center; 
+    }
+
+    .resumo {
+        padding: 20px;
+    }
+
+    .about {
+        margin-left: 0;
+    }
+
+    .about p {
+        font-size: 24px; 
+        font-weight: 300;
+    }
+
+    .about h6 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .list ul {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .list ul li {
+        width: 298px; 
+        height: 152px; 
+        margin-right: 0; 
+    }
+
+    .list ul li br {
+        display: none; 
+    }
+    
+    .container-about {
+        max-width: 100%; 
+    }
+
+    .img-ods {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 866px) {
+    
+    aside img {
+        display: none;
+    }
+
+    aside::before {
+        content: none;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+
+    aside img {
+        display: none;
+    }
+
+    aside::before {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 1158px) and (max-height: 866px) {
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .home {
+        padding: 50px; 
+    }
+
+    .home p {
+        font-size: 24px;
+    }
+
+    .home h5 {
+        font-size: 48px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .info-box {
+        flex-direction: column; 
+        align-items: center;
+        padding: 30px;
+    }
+
+    .about, .resumo {
+        text-align: center; 
+    }
+
+    .resumo p br {
+        display: none; 
+    }
+
+    .about {
+        margin-left: 0;
+    }
+
+    .about p {
+        font-size: 24px; 
+        font-weight: 300;
+    }
+
+    .about h6 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    
+    .container-about {
+        max-width: 100%; 
+    }
+
+    .img-ods {
+        max-width: 200px;
+    }
+
+    .img-ods {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-home-saiba-mais {
+        display: none;
+    }
+
+    .btn2-home-saiba-mais {
+        display: block;
+    }
+
+    .resumo {
+        margin-top: -60px;
+    }
+
+
+}
+
+@media screen and (max-width: 1158px) and (max-height: 866px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home {
+        padding: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .home p {
+        font-size: 24px;
+    }
+
+    .home h5 {
+        font-size: 48px;
+    }
+
+    .btn-façaparte-home {
+        margin-top: 20px;
+    }
+
+    .home::before {
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 80%;
+    border: solid #7F52CB 10px;
+    border-radius: 90px;
+    top: 20px;
+    left: -30%; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    
+    }
+}
+
+@media screen and (max-width: 758px) and (max-height: 866px) {
+    
+    .home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border: solid #7F52CB 10px;
+    border-radius: 90px;
+    padding: 15px;
+    top: 20px;
+    left: -20%; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    }
+
+}
+
+@media screen and (max-width: 1350px) and (max-height: 866px) {
+    .list ul {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .list ul li {
+        width: 298px; 
+        height: 152px; 
+        margin-right: 0; 
+    }
+
+    .list ul li br {
+        display: none; 
+    }
+
+}
+
+
+
+
+
+
