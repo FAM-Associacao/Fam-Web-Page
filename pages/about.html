@@ -11,13 +11,40 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="logo-nav">
+            <a class="logo" href="/index.html"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+        </div>
+        <a href="#" class="button-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-nav">
+            <ul>
+                <li><a href="/pages/cases.html">Nossa atuação</a></li>
+                <li><a href="/pages/about.html">Sobre nós</a></li>
+                <li><a href="/pages/transparencia.html">Transparência</a></li>
+                <li><a href="/pages/contact.html">Contato</a></li>
+                <div class="nav-button-container">
+                    <button class="btn-nav" style="margin: 0;"
+                        onclick="window.location.href='/pages/participate.html'">Faça
+                        parte!</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
     <main>
 
-        <section class="about-banner">
+        <section class="about-banner" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">>
 
             <div class="left-side">
                 <h1>Sobre nós</h1>
@@ -35,29 +62,31 @@
 
         </section>
 
-        <div class="our-commitments-container">
+        <div class="our-commitments-container" data-aos="zoom-in" data-aos-duration="1000">
 
             <span class="span-commitments">
                 <h3>Nosso compromisso</h3>
             </span>
 
 
-
             <div class="card-container">
-                <div class="card">
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Missão</h4>
-                    <p>Promover bem-estar e dignidade na comunidade de São Marcos, Vargem Grande Paulista, através de
-                        ações emergenciais, educativas e de desenvolvimento comunitário.</p>
+                    <p>Promover o bem-estar humano integral restabelecendo sua dignidade na sociedade por meio de ações
+                        emergenciais, educativas e preventivas, e do fomento ao desenvolvimento comunitário no bairro
+                        São Marcos e adjacentes do município de Vargem Grande Paulista/SP.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Visão</h4>
                     <p>Ser considerada uma organização referência no município na promoção do bem-estar e valorização
                         humana e social.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Valores</h4>
-                    <p>Agir com honestidade e moralidade, orientando cada ação com atenção, respeito e empatia. Para
-                        transformar o bem-estar com ações significativas.</p>
+                    <p>Integridade: Trabalhar sempre dentro dos princípios da honestidade e moralidade.
+                        Amor ao Próximo: É a razão de cada atitude de atenção, respeito, empatia que nos move cada dia.
+                        Comprometimento: Trabalhar com a convicção diária que com vontade e pequenas ações em prol do
+                        bem é possível Transformar</p>
                 </div>
             </div>
 
@@ -65,7 +94,7 @@
 
 
 
-        <div class="container-top">
+        <div class="container-top" data-aos="fade-up" data-aos-duration="1000">
 
             <div class="top-left-content">
                 <img src="/assets/images/historia_instituicao1.png" alt="">
@@ -87,14 +116,11 @@
             </div>
         </div>
 
-        <div class="container-bottom">
+        <div class="container-bottom" data-aos="fade-up" data-aos-duration="1000">
             <div class="bottom-left-content">
                 <img src="/assets/images/historia_instituicao2.png" alt="">
                 <p>Designed by Freepik</p>
             </div>
-
-
-
             <div class="bottom-right-content">
                 <h2>História da instituição</h2>
                 <p>Atualmente, além dos serviços de saúde e ambientais, a organização recicla diversos resíduos para
@@ -111,8 +137,8 @@
 
 
         <section class="become-member-section">
-            <h3>Transforme Vidas: Seja a Mudança que o Mundo Precisa!</h3>
-            <button class="member-button">Faça parte</button>
+            <h3 data-aos="zoom-in" data-aos-duration="1000">Transforme Vidas: Seja a Mudança que o Mundo Precisa!</h3>
+            <button class="member-button" data-aos="zoom-in" data-aos-duration="1000">Faça parte</button>
             <div class="background-image"></div>
         </section>
 
@@ -128,54 +154,57 @@
 
     <footer>
         <div class="container-home-contact">
-          <h3>Entre em contato</h3>
-          <div class="container-inputs-contact">
-            <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-            <input type="text" name="email" id="email" placeholder="E-mail">
-          </div>
-          <div class="container-message-contact">
-            <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
-          </div>
-          <button class="button-send-contact">Enviar</button>
+            <h3>Entre em contato</h3>
+            <div class="container-inputs-contact">
+                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="container-message-contact">
+                <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
+            </div>
+            <button class="button-send-contact">Enviar</button>
         </div>
         <div class="container-home-links">
-          <button><strong>Faça parte!</strong></button>
-          <div class="links-and-questions">
-            <div>
-              <h3>Links rapidos</h3>
-              <p><a href="/index.html">Home</a></p>
-              <p><a href="/pages/cases.html">Nossa atuação</a></p>
-              <p><a href="/pages/about.html">Sobre Nos</a></p>
-              <p><a href="/index.html">Transparencia</a></p>
-              <p><a href="/pages/contact.html">Contato</a></p>
-              <p><a href="/index.html">Faça parte</a></p>
+            <button><strong>Faça parte!</strong></button>
+            <div class="links-and-questions">
+                <div>
+                    <h3>Links rapidos</h3>
+                    <p><a href="/index.html">Home</a></p>
+                    <p><a href="/pages/cases.html">Nossa atuação</a></p>
+                    <p><a href="/pages/about.html">Sobre Nos</a></p>
+                    <p><a href="/index.html">Transparencia</a></p>
+                    <p><a href="/pages/contact.html">Contato</a></p>
+                    <p><a href="/index.html">Faça parte</a></p>
+                </div>
+                <div>
+                    <h3>Duvidas</h3>
+                    <p><a href="#">Politica de privacidade</a></p>
+                    <p><a href="#">Termos e condicoes</a></p>
+                    <div class="opening-hours">
+                        <p>Segunda a sexta: 08h as 18h</p>
+                        <p>Sabado: 08h as 14h</p>
+                        <p>Exeto feriados</p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h3>Duvidas</h3>
-              <p><a href="#">Politica de privacidade</a></p>
-              <p><a href="#">Termos e condicoes</a></p>
-              <div class="opening-hours">
-                <p>Segunda a sexta: 08h as 18h</p>
-                <p>Sabado: 08h as 14h</p>
-                <p>Exeto feriados</p>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="container-home-info">
-          <div class="info-address">
-            <p>Associacao a Forca do Amor</p>
-            <p>CNPJ: 12.345.678/0001-99</p>
-            <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
-          </div>
-    
-          <div class="social-medias">
-            <a href="#"><img src="../assets/icons/facebookIcon.svg" alt="Facebook"></a>
-            <a href="#"><img src="../assets/icons/instagramIcon.svg" alt="Instagram"></a>
-            <a href="#"><img src="../assets/icons/emailIcon.svg" alt="Email"></a>
-          </div>
+            <div class="info-address">
+                <p>Associacao a Forca do Amor</p>
+                <p>CNPJ: 12.345.678/0001-99</p>
+                <p>Endereco: Rua Ficticia, 0 Cidade Ficticia - SP</p>
+            </div>
+
+            <div class="social-medias">
+                <a href="#"><img src="../assets/icons/facebookIcon.svg" alt="Facebook"></a>
+                <a href="#"><img src="../assets/icons/instagramIcon.svg" alt="Instagram"></a>
+                <a href="#"><img src="../assets/icons/emailIcon.svg" alt="Email"></a>
+            </div>
         </div>
-      </footer>
+    </footer>
+
 </body>
+<script src="/js/toogleMenu.js"></script>
+<script>AOS.init();</script>
 
 </html>
