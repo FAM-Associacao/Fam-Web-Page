@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
+  <title>Fam - Contato</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo-nav">
+      <a class="logo" href="/index.html"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+    </div>
+    <a href="#" class="button-menu" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="list-nav">
+      <ul>
+        <li><a href="/pages/cases.html">Nossa atuação</a></li>
+        <li><a href="/pages/about.html">Sobre nós</a></li>
+        <li><a href="/pages/#">Transparência</a></li>
+        <li><a href="/pages/contact.html">Contato</a></li>
+        <div class="nav-button-container">
+          <button class="btn-nav" style="margin: 0;" onclick="window.location.href='/pages/participate.html'">Faça
+            parte!</button>
+        </div>
+      </ul>
+    </div>
+  </nav>
   <main>
     <section class="make-diference-container">
       <h2>Faça a Diferença: Seja voluntário!</h2>
@@ -16,16 +39,18 @@
         Você está pronto para fazer a diferença? Junte-se a nos e
         seja parte das transformacoes positivas que impactam vidas e comunidades!
       </p>
-      <div>
+      <form action="https://formsubmit.co/cleitson.ftw@gmail.com" method="POST">
         <div class="inputs-contacts">
-          <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-          <input type="text" name="email" id="email" placeholder="E-mail">
+          <input type="text" name="name" id="nomeCompleto" placeholder="Nome Completo" required>
+          <input type="email" name="email" id="email" placeholder="E-mail" required>
         </div>
         <div class="message-contacts">
-          <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
+          <input type="text" name="message" id="message" placeholder="Escreva sua mensagem aqui..." required>
         </div>
-        <button class="button-send-contact">Enviar</button>
-      </div>
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_template" value="table">
+        <button type="submit" class="button-send-contact">Enviar</button>
+      </form>
     </section>
     <section class="info-contact-container">
       <div class="contact-container">
@@ -55,14 +80,14 @@
   </main>
   <footer>    
     <div class="container-home-links">
-      <button><strong>Faça parte!</strong></button>
+      <button onclick="redirecionar()"><strong>Faça parte!</strong></button>
       <div class="links-and-questions">
         <div>
           <h3>Links rapidos</h3>
           <p><a href="/index.html">Home</a></p>
           <p><a href="/pages/cases.html">Nossa atuação</a></p>
           <p><a href="/pages/about.html">Sobre Nos</a></p>
-          <p><a href="/index.html">Transparencia</a></p>
+          <p><a href="/pages/transparencia.html">Transparencia</a></p>
           <p><a href="/pages/contact.html">Contato</a></p>
           <p><a href="/pages/participate.html">Faça parte</a></p>
         </div>
@@ -91,5 +116,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/toogleMenu.js"></script>
 </body>
 </html>
