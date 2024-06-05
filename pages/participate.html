@@ -15,7 +15,7 @@
 
   <nav class="navbar">
     <div class="logo-nav">
-      <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+      <a class="logo" href="/index.html"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
     </div>
     <a href="#" class="button-menu" onclick="toggleMenu()">
       <span class="bar"></span>
@@ -26,7 +26,7 @@
       <ul>
         <li><a href="/pages/cases.html">Nossa atuação</a></li>
         <li><a href="/pages/about.html">Sobre nós</a></li>
-        <li><a href="/pages/#">Transparência</a></li>
+        <li><a href="/pages/transparencia.html">Transparência</a></li>
         <li><a href="/pages/contact.html">Contato</a></li>
         <div class="nav-button-container">
           <button class="btn-nav" style="margin: 0;" onclick="window.location.href='/pages/participate.html'">Faça
@@ -84,6 +84,7 @@
           <input type="text" id="donation" name="message" placeholder="O que deseja doar?" required>
           <input type="hidden" name="_subject" value="New submission!">
           <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="http://localhost:5501/pages/thanks.html">
           <button type="submit">Enviar</button>
         </div>
       </form>
@@ -91,7 +92,7 @@
   </main>
   <footer>
     <div class="container-home-links">
-      <button><strong>Faça parte!</strong></button>
+      <button onclick="redirecionar()"><strong>Faça parte!</strong></button>
       <div class="links-and-questions">
         <div>
           <h3>Links rapidos</h3>
