@@ -9,36 +9,40 @@
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/participate.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
   <nav class="navbar">
+
     <div class="logo-nav">
-      <a class="logo" href="#"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
+        <a class="logo" href="/index.html"><img src="/assets/images/VO.-Preto-PNG.png" alt="Logo"></a>
     </div>
+
     <a href="#" class="button-menu" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </a>
+
     <div class="list-nav">
-      <ul>
-        <li><a href="/pages/cases.html">Nossa atuação</a></li>
-        <li><a href="/pages/about.html">Sobre nós</a></li>
-        <li><a href="/pages/#">Transparência</a></li>
-        <li><a href="/pages/contact.html">Contato</a></li>
-        <div class="nav-button-container">
-          <button class="btn-nav" style="margin: 0;" onclick="window.location.href='/pages/participate.html'">Faça
-            parte!</button>
-        </div>
-      </ul>
+        <ul>
+            <li><a href="/pages/cases.html">Nossa atuação</a></li>
+            <li><a href="/pages/about.html">Sobre nós</a></li>
+            <li><a href="/pages/transparencia.html">Transparência</a></li>
+            <li><a href="/pages/contact.html">Contato</a></li>
+            <div class="nav-button-container">
+                <button class="btn-nav" style="margin: 0;"
+                    onclick="window.location.href='/pages/participate.html'">Faça
+                    parte!</button>
+        </ul>
     </div>
-  </nav>
+</nav>
 
   <main>
-    <section class="donation-container">
-      <div class="call-donation-container">
+    <section class="donation-container" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="call-donation-container" >
         <div class="info-account">
           <h1>Faça parte da mudança!</h1>
           <p>
@@ -51,12 +55,12 @@
           <p>Banco Stone,&nbsp; Agencia 0001,&nbsp; Conta Corrente 667735-5</p>
         </div>
       </div>
-      <div class="info-QRcode">
+      <div class="info-QRcode" data-aos="zoom-in" data-aos-duration="1500">
         <img src="/assets/images/Qr-Code.svg" alt="Qr-Code doar">
         <h3>Escaneie o QR Code</h3>
       </div>
     </section>
-    <section class="volunteer-container">
+    <section class="volunteer-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
       <div class="call-volunteer-container">        
         <h3>Doação física</h3>
         <p>
@@ -129,6 +133,9 @@
     </div>
   </footer>
   <script src="/js/toogleMenu.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
 </body>
 
 </html>
