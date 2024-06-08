@@ -55,7 +55,7 @@
                 <h1>Sobre nós</h1>
                 <h2>Associação a Força do Amor</h2>
                 <div class="button-container">
-                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                    <button id="be-part-btn" onclick="redirecionar()">Faça parte!</button>
                 </div>
             </div>
 
@@ -118,7 +118,7 @@
                     públicos e projetos ambientais, como a coleta de óleo usado.
                 </p>
                 <div class="button-container">
-                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                    <button id="be-part-btn" onclick="redirecionar()">Faça parte!</button>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
 
                 <div class="button-container">
 
-                    <button id="be-part-btn" onclick="window.location.href='#'">Faça parte!</button>
+                    <button id="be-part-btn" onclick="redirecionar()">Faça parte!</button>
                 </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
 
         <section class="become-member-section">
             <h3 data-aos="zoom-in" data-aos-duration="1000">Transforme Vidas: Seja a Mudança que o Mundo Precisa!</h3>
-            <button class="member-button" data-aos="zoom-in" data-aos-duration="1000">Faça parte</button>
+            <button class="member-button" data-aos="zoom-in" data-aos-duration="1000" onclick="redirecionar()">Faça parte</button>
             <div class="background-image"></div>
         </section>
 
@@ -180,28 +180,31 @@
     </main>
 
     <footer>
-        <div class="container-home-contact">
+        <form class="container-home-contact" action="https://formsubmit.co/cleitson.ftw@gmail.com" method="POST">
             <h3>Entre em contato</h3>
             <div class="container-inputs-contact">
-                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-                <input type="text" name="email" id="email" placeholder="E-mail">
+              <input type="text" name="name" id="nomeCompleto" placeholder="Nome Completo" required>
+              <input type="text" name="email" id="email" placeholder="E-mail" required>
             </div>
             <div class="container-message-contact">
-                <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
+              <input name="message" id="message" placeholder="Escreva sua mensagem aqui..."></input>
             </div>
-            <button class="button-send-contact">Enviar</button>
-        </div>
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="http://localhost:5501/pages/thanks.html">
+            <button type="submit" class="button-send-contact">Enviar</button>
+          </form>
         <div class="container-home-links">
-            <button><strong>Faça parte!</strong></button>
+            <button onclick="redirecionar()"><strong>Faça parte!</strong></button>
             <div class="links-and-questions">
                 <div>
                     <h3>Links rapidos</h3>
                     <p><a href="/index.html">Home</a></p>
                     <p><a href="/pages/cases.html">Nossa atuação</a></p>
                     <p><a href="/pages/about.html">Sobre Nos</a></p>
-                    <p><a href="/index.html">Transparencia</a></p>
+                    <p><a href="/pages/transparencia.html">Transparencia</a></p>
                     <p><a href="/pages/contact.html">Contato</a></p>
-                    <p><a href="/index.html">Faça parte</a></p>
+                    <p><a href="/pages/participate.html">Faça parte</a></p>
                 </div>
                 <div>
                     <h3>Duvidas</h3>
