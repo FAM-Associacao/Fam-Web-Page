@@ -296,7 +296,7 @@ aside::before {
 }
 
 .container-about-ods {
-    align-items: center; /* Alinha verticalmente os itens dentro da div */
+    align-items: center; 
 }
 
 .container {
@@ -308,8 +308,8 @@ aside::before {
 
 .classods-tudo {
 display: flex;
-justify-content: center; /* Centraliza horizontalmente */
-align-items: center; /* Centraliza verticalmente */
+justify-content: center; 
+align-items: center; 
 }
 
 .img-ods {
@@ -325,7 +325,7 @@ align-items: center; /* Centraliza verticalmente */
 
 
 
-                                                        /* RESPONSIVIDADE TOTAL */
+                                                        /* RESPONSIVIDADE */
 
                                                         
                                                         
