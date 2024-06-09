@@ -12,14 +12,19 @@
 
                                                 /* HOME */
 
-
+                                                
 .container {
     display: flex;
     align-items: center;
+    margin-top: 90px;
 }
+
+                                                
+                                                
 
 .home {
     padding: 200px;
+    margin-left: -135px;
 }
 
 .home p {
@@ -36,30 +41,37 @@
     font-weight: 500;
 }
 
+
                                                 /* BOTÃO HOME */
 
 .btn-façaparte-home {
     font-family: "Montserrat", sans-serif;
-    padding: 12px 32px;
-    background-color: #7F52CB;
-    color: #F2F2F2;
-    border: none; 
-    border-radius: 20px;
-    font-weight: 700;
+    width: 180px;
+    height: 50px;
+    margin: 30px 0 20px;
+    background-color: #7F53CA;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 259ms;
 }
 
 .btn-façaparte-home:hover {
-    background-color: #502e89;
-    color: #F2F2F2;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
                                                 /* IMAGEM HOME */
 
 aside {
     position: relative;
-    margin-left: 70px; 
+    
+    margin-left: 190px; 
     
 }
 
@@ -89,7 +101,7 @@ aside::before {
     justify-content: center;
     align-items: center;
     height: 50vh; 
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .info-box {
@@ -98,13 +110,14 @@ aside::before {
     padding: 50px;
     display: flex;
     justify-content: space-around;
-    width: 80%; 
+    width: 90%; 
+
 }
 
 .info {
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.467);
+    background-color: rgba(255, 255, 255, 0.25);
     border-radius: 100px;
     width: 21%;
 }
@@ -140,42 +153,51 @@ aside::before {
 
 .btn-home-saiba-mais {
     font-family: "Montserrat", sans-serif;
-    padding: 12px 32px;
-    background-color: #7F52CB;
-    color: #F2F2F2;
-    border: none; 
-    border-radius: 20px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 900;
+    width: 180px;
+    height: 50px;
+    margin: 30px 0 20px;
+    padding: 10px 10px;
+    background-color: #7F53CA;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 259ms;
     
 }
 
 .btn-home-saiba-mais:hover {
-    background-color: #502e89;
-    color: #F2F2F2;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 .btn2-home-saiba-mais {
     font-family: "Montserrat", sans-serif;
-    padding: 12px 32px;
-    background-color: #7F52CB;
-    color: #F2F2F2;
-    border: none; 
-    border-radius: 20px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 900;
+    width: 180px;
+    height: 50px;
+    margin: 10px 0 20px;
+    background-color: #7F53CA;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 259ms;
     display: none;
-    
+    margin-top: -20px;
 }
 
 .btn2-home-saiba-mais:hover {
-    background-color: #502e89;
-    color: #F2F2F2;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
+
 
                                                             /* SOBRE NÓS - RESUMO */
 
@@ -304,6 +326,8 @@ aside::before {
 @media only screen and (max-width: 480px) {
     .info-box {
         padding: 20px;
+        height: 120%;
+        border-radius: 70px;
     }
 
     .info {
@@ -355,11 +379,74 @@ aside::before {
     .info p {
         font-size: 16px;
     }
+
+    .container-about{
+        margin-right: 130px;
+    }
+
+    .container-about .about p {
+        margin-right: 160px;
+    }
+
+    .container-about .about h6 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .resumo p {
+        text-align: left;
+    }
+
+    .btn2-home-saiba-mais {
+        margin-right: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+    .container .ODS p {
+        text-align: left;
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 436px) {
+    .container-about{
+        margin-right: 90px;
+    }
+
+    .container-about .about h6 {
+        text-align: left;
+    }
+
+    .btn2-home-saiba-mais {
+        margin-right: 210px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .container-about{
+        margin-right: 60px;
+    }
+
+    .container-about .about h6 {
+        text-align: left;
+    }
+
+    .btn2-home-saiba-mais {
+        margin-right: 180px;
+    }
+}
+
+@media only screen and (max-width: 362px) {
+    .btn2-home-saiba-mais {
+        margin-right: 40px;
+    }
 }
 
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
     .container {
         flex-direction: column; 
     }
@@ -464,6 +551,7 @@ aside::before {
 
     .home {
         padding: 50px; 
+        margin-left: 10px;
     }
 
     .home p {
@@ -478,11 +566,24 @@ aside::before {
         display: none;
     }
 
+    .container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh; 
+        margin-bottom: 150px;
+    }
+
     .info-box {
         flex-direction: column; 
         align-items: center;
         padding: 30px;
+        margin-top: 450px; 
+        margin-bottom: 400px; 
+        gap: 10px;
     }
+
+
 
     .about, .resumo {
         text-align: center; 
@@ -574,7 +675,6 @@ aside::before {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
-    
     }
 }
 
@@ -615,6 +715,8 @@ aside::before {
     }
 
 }
+
+
 
 
 
