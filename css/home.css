@@ -280,6 +280,10 @@ aside::before {
     margin-bottom: 10px; 
 }
 
+
+/*                SEÇÃO ODS                          */
+
+
 .ODS {
     flex: 1;
     padding: 50px;
@@ -288,13 +292,35 @@ aside::before {
 .ODS p {
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-                                                /* IMAGEM EIXO DAS ATIVIDADES */
+.container-about-ods {
+    align-items: center; /* Alinha verticalmente os itens dentro da div */
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.classods-tudo {
+display: flex;
+justify-content: center; /* Centraliza horizontalmente */
+align-items: center; /* Centraliza verticalmente */
+}
 
 .img-ods {
-    max-width: 70%;
-    margin-left: 25%;
+  max-width: 80%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.ODS p {
+    text-align: left;
 }
 
 
