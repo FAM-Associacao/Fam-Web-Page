@@ -14,9 +14,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 130px;
 }
 
 main h1 {
+    font-family: "Montserrat", sans-serif;  
     text-transform: uppercase;
     color: #7F53CA;
     margin: 60px 0 0;
@@ -28,6 +30,7 @@ main h1 {
     justify-content: center;
     flex-direction: row;
     margin: 60px 80px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .top-left-content {
@@ -42,7 +45,7 @@ main h1 {
 }
 
 .top-left-content p {
-    color: #c3c3c3;
+    color: #8b8b8b;
     margin: 5px 0;
     font-weight: 100;
 }
@@ -71,6 +74,7 @@ main h1 {
     justify-content: center;
     flex-direction: row-reverse;
     margin: 40px 80px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .bottom-right-content {
@@ -89,7 +93,7 @@ main h1 {
     letter-spacing: 1px;
 }
 
-.bottom-right-content span {
+.bottom-right-content span, .top-right-content span {
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -114,16 +118,20 @@ main h1 {
 }
 
 .bottom-left-content p {
-    color: #c3c3c3;
+    color: #8b8b8b;
     margin: 5px 0;
+    font-weight: 100;
 }
 
-
+.button-container{
+    display: flex;
+    justify-content: flex-start;
+}
 /*Button Faça Parte*/
 
 #be-part-btn {
+    font-family: "Montserrat", sans-serif;
     width: 180px;
-    height: 50px;
     margin: 30px 0 20px;
     background-color: #7F53CA;
     color: #ffffff;
@@ -180,7 +188,7 @@ main h1 {
     .top-left-content>img,
     .bottom-left-content>img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .top-left-content p,
