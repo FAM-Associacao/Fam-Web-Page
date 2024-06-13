@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     margin-top: 90px;
+    overflow: hidden;
 }
 
                                                 
@@ -27,6 +28,8 @@
 .home {
     padding: 210px;
     margin-left: -155px;
+    padding: 180px;
+    margin-left: -85px;
 }
 
 .home p {
@@ -46,7 +49,7 @@
 
                                                 /* BOTÃO HOME */
 
-.btn-façaparte-home {
+.btn-facaparte-home {
     font-family: "Montserrat", sans-serif;
     width: 180px;
     height: 50px;
@@ -62,7 +65,8 @@
     transition: all 259ms;
 }
 
-.btn-façaparte-home:hover {
+
+.btn-facaparte-home:hover {
     color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
@@ -71,10 +75,8 @@
                                                 /* IMAGEM HOME */
 
 aside {
-    position: relative;
-    
-    margin-left: 190px; 
-    
+    position: relative;    
+    margin-left: 190px;
 }
 
 aside img {
@@ -87,7 +89,7 @@ aside::before {
     top: 20px;
     left: -15%; 
     right: -20px;
-    bottom: -80px;
+    bottom: -50px;
     border-top-left-radius: 90px;
     border-bottom-left-radius: 90px;
     border-top-right-radius: 0;
@@ -712,7 +714,7 @@ align-items: center;
         font-size: 48px;
     }
 
-    .btn-façaparte-home {
+    .btn-facaparte-home {
         margin-top: 20px;
     }
 
