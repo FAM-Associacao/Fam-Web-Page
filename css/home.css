@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+
 }
 
                                                 /* HOME */
@@ -24,6 +26,8 @@
                                                 
 
 .home {
+    padding: 210px;
+    margin-left: -155px;
     padding: 180px;
     margin-left: -85px;
 }
@@ -323,6 +327,15 @@ align-items: center;
     text-align: left;
 }
 
+.container-ods {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+   justify-content: center; 
+}
+
+ 
+
 
 
                                                         /* RESPONSIVIDADE */
@@ -477,6 +490,10 @@ align-items: center;
         flex-direction: column; 
     }
 
+    .container-ods {
+        flex-direction: column; 
+    }
+
     .home {
         padding: 50px; 
     }
@@ -575,6 +592,12 @@ align-items: center;
         flex-direction: column; 
     }
 
+    .container-ods {
+        flex-direction: column; 
+    }
+
+
+
     .home {
         padding: 50px; 
         margin-left: 10px;
@@ -669,6 +692,13 @@ align-items: center;
         position: relative;
         overflow: hidden;
     }
+
+    .container-ods {
+        flex-direction: column; 
+        position: relative;
+        overflow: hidden;
+    }
+
 
     .home {
         padding: 50px;
