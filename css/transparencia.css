@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-body, html {
-    height: 100%;
-    margin: 0;
-    margin-left: -20px;
-    font-family: "Montserrat", sans-serif;
-}
 
 .background-image {
     background-image: url('/assets/images/FAM-Pattern-PNG1.png');
@@ -46,8 +35,9 @@ body, html {
 
 .links-transparencia ul {
     list-style-type: none;
-    margin-left: 50px;
-    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px; 
 }
 
 .links-transparencia li {
@@ -130,7 +120,7 @@ body, html {
 @media (max-width: 880px) {
     .text h1 {
         font-size: 1.2rem;
-        padding: 50px;
+        padding: 20px;
     }
     .links-transparencia li {
         width: auto;
@@ -172,5 +162,8 @@ body, html {
     .links-transparencia ul li .visualizar-link a,
     .links-transparencia ul li .inativo a {
         display: none;
+    }
+    .links-transparencia ul {
+        padding: 0px;
     }
 }
