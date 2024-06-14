@@ -142,11 +142,6 @@ body, html {
 
 @media (max-width: 550px) {
 
-    .content .links-transparencia {
-        margin-left: -10px;
-
-    }
-
     .links-transparencia ul li .visualizar-link,
     .links-transparencia ul li .inativo {
         padding: 8px;
