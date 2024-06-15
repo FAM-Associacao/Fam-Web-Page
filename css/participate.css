@@ -130,7 +130,8 @@ main {
     flex-direction: row;
     padding: 50px;
     justify-content: space-between;
-    width: 70%;
+    width: 50%;
+    height: 450px;
   }
 
   .call-donation-container {
@@ -139,6 +140,8 @@ main {
   }
 
   .info-QRcode {
+    display: flex;
+    justify-content: flex-end;
     width: 50%;
   }
 
